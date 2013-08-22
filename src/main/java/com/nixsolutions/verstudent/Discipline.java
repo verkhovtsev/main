@@ -8,9 +8,13 @@ public class Discipline {
 	
 	@Id @GeneratedValue
 	@Column(name="discipline_id")
+
+
 	private Long id;
 	
 	@Column(name="disciplinename")
+
+    s
 	private String name;
 	
 	@Column(name="duration")
