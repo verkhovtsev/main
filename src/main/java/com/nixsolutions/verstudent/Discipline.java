@@ -14,7 +14,6 @@ public class Discipline {
 	
 	@Column(name="disciplinename")
 
-    s
 	private String name;
 	
 	@Column(name="duration")
