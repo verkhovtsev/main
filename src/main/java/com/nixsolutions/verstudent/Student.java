@@ -19,6 +19,7 @@ public class Student {
 	
 	@Id @GeneratedValue
 	@Column(name="student_id")
+
 	private Long id;
 	
 	@Column(name="firstname")
