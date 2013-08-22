@@ -1,0 +1,57 @@
+CREATE TABLE groups (
+group_id BIGINT NOT NULL IDENTITY,
+groupname VARCHAR NOT NULL,
+numberofstudents INT
+);
+
+CREATE TABLE students (
+student_id BIGINT NOT NULL IDENTITY,
+firstname VARCHAR NOT NULL,
+lastname VARCHAR NOT NULL,
+dateofadmission DATE NOT NULL,
+group_id BIGINT NOT NULL,
+CONSTRAINT fk_group_stud FOREIGN KEY (group_id) REFERENCES groups (group_id)
+);
+
+CREATE TABLE terms (
+term_id BIGINT NOT NULL IDENTITY,
+number INT UNIQUE NOT NULL,
+duration INT
+);
+
+CREATE TABLE disciplines (
+discipline_id BIGINT NOT NULL IDENTITY,
+disciplinename VARCHAR NOT NULL,
+duration INT
+);
+
+
+CREATE TABLE marksheets (
+student_id BIGINT NOT NULL,
+term_id BIGINT NOT NULL,
+discipline_id BIGINT NOT NULL,
+averagemark INT,
+CONSTRAINT fk_stud_marksheet FOREIGN KEY (student_id) REFERENCES students (student_id)
+CONSTRAINT fk_term_marksheet FOREIGN KEY (term_id) REFERENCES terms (term_id)
+CONSTRAINT fk_discipl_marksheet FOREIGN KEY (discipline_id) REFERENCES disciplines (discipline_id)
+);
+
+
+
+[CONSTRAINT <name>]
+    UNIQUE ( <column> [,<column>...] ) |
+    PRIMARY KEY ( <column> [,<column>...] ) |
+    FOREIGN KEY ( <column> [,<column>...] )
+    REFERENCES <refTable> ( <column> [,<column>...]) 
+    [ON {DELETE | UPDATE}
+    {CASCADE | SET DEFAULT | SET NULL}][2] |
+
+
+
+INSERT INTO students (firstname, lastname, dateofadmission, group_id) VALUES ('Andrey', 'Verkhovtsev', '2006-09-01', '002');
+INSERT INTO students (firstname, lastname, dateofadmission, group_id) VALUES ('Alexey', 'Grachov', '2006-09-01', '002');
+INSERT INTO students (firstname, lastname, dateofadmission, group_id) VALUES ('Alexey', 'Jurba', '2006-09-01', '003');
+
+
+
+

@@ -1,0 +1,59 @@
+<dataset> 
+		
+	<table name="groups"> 
+		<column>group_id</column>		
+		<column>groupname</column> 
+		<row> 
+			<value>002</value> 
+			<value>Bill</value> 
+		</row> 
+		<row> 
+			<value>003</value> 
+			<value>George</value> 
+		</row> 
+	</table>
+	
+	<table name="students"> 
+		<column>student_id</column> 
+		<column>firstname</column> 
+		<column>lastname</column> 
+		<column>group_id</column>		
+		<column>dateofadmission</column> 
+
+		<row> 
+			<value>1000</value> 
+			<value>Bill</value> 
+			<value>Gates</value> 
+			<value>002</value>
+			<value>1968-04-26</value> 
+		</row> 
+		<row> 
+			<value>1002</value> 
+			<value>George</value> 
+			<value>Bush</value>
+			<value>002</value>			 
+			<value>1949-08-17</value>
+		</row> 
+		<row> 
+			<value>1011</value> 
+			<value>Andrey</value> 
+			<value>Verkhovtsev</value> 
+			<value>003</value>
+			<value>1989-05-24</value>
+		</row>
+		<row> 
+			<value>1003</value> 
+			<value>Alexey</value> 
+			<value>Grachov</value> 
+			<value>002</value>
+			<value>1988-11-08</value>
+		</row>
+		<row> 
+			<value>1004</value> 
+			<value>Alexey</value> 
+			<value>Grachov</value> 
+			<value>003</value>
+			<value>1988-05-12</value>
+		</row>
+</table> 
+</dataset> 
