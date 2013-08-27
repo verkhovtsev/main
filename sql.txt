@@ -51,6 +51,9 @@ CONSTRAINT fk_discipl_marksheet FOREIGN KEY (discipline_id) REFERENCES disciplin
 
 
 
+
+
+
 INSERT INTO students (firstname, lastname, dateofadmission, group_id) VALUES ('Andrey', 'Verkhovtsev', '2006-09-01', '002');
 INSERT INTO students (firstname, lastname, dateofadmission, group_id) VALUES ('Alexey', 'Grachov', '2006-09-01', '002');
 INSERT INTO students (firstname, lastname, dateofadmission, group_id) VALUES ('Alexey', 'Jurba', '2006-09-01', '003');
