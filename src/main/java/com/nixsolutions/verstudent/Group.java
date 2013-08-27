@@ -17,6 +17,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name="groups")
 public class Group {
+
+
 	
 	@Id @GeneratedValue
 	@Column(name="group_id")
