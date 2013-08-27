@@ -26,6 +26,9 @@ duration INT
 );
 
 
+
+
+
 CREATE TABLE marksheets (
 student_id BIGINT NOT NULL,
 term_id BIGINT NOT NULL,
