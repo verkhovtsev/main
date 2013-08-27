@@ -17,6 +17,8 @@ public class Discipline {
 	private Integer duration;
 
 
+
+
 	
 	
 }
