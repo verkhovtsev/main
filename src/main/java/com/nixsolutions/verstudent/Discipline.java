@@ -15,6 +15,8 @@ public class Discipline {
 	
 	@Column(name="duration")
 	private Integer duration;
+
+
 	
 	
 }
