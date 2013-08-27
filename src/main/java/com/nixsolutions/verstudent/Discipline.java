@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 public class Discipline {
+
+
 	
 	@Id @GeneratedValue
 	@Column(name="discipline_id")
