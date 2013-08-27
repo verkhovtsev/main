@@ -24,7 +24,9 @@ public class Student {
 	
 	@Column(name="firstname")
 	private String firstName;
-	
+
+
+
 	@Column(name="lastname")
 	private String lastName;
 	
