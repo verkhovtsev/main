@@ -17,6 +17,8 @@ import javax.persistence.TemporalType;
 @Table(name="students")
 public class Student {
 	
+	
+	
 	@Id @GeneratedValue
 	@Column(name="student_id")
 
